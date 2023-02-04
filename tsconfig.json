@@ -2,7 +2,13 @@
   "compilerOptions": {
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
-    "noUncheckedIndexedAccess": true
+    "noUncheckedIndexedAccess": true,
+    "strict": true,
+    "moduleResolution": "node",
+    "checkJs": false,
+    "skipLibCheck": true,
+    "target": "ESNext",
+    "lib": ["dom", "dom.iterable", "esnext"]
   },
   "include": ["src/**/*.ts"],
   "exclude": ["node_modules", "dist/**/*"]

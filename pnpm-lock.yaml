@@ -1,15 +1,19 @@
 lockfileVersion: 5.4
 
 specifiers:
+  '@parcel/config-default': ^2.8.3
   '@parcel/core': ^2.8.3
   '@parcel/packager-ts': ^2.8.3
+  '@parcel/transformer-typescript-tsc': ^2.8.3
   '@parcel/transformer-typescript-types': ^2.8.3
   parcel: ^2.8.3
   typescript: ^4.9.5
 
 devDependencies:
+  '@parcel/config-default': 2.8.3_@parcel+core@2.8.3
   '@parcel/core': 2.8.3
   '@parcel/packager-ts': 2.8.3_@parcel+core@2.8.3
+  '@parcel/transformer-typescript-tsc': 2.8.3_xscxxxiz63f5lkhm7jmoqp4aui
   '@parcel/transformer-typescript-types': 2.8.3_xscxxxiz63f5lkhm7jmoqp4aui
   parcel: 2.8.3
   typescript: 4.9.5
@@ -804,6 +808,20 @@ packages:
       - '@parcel/core'
     dev: true
 
+  /@parcel/transformer-typescript-tsc/2.8.3_xscxxxiz63f5lkhm7jmoqp4aui:
+    resolution: {integrity: sha512-hig99OrUJhXuGLN+Nxisvfkj3cggH6GM1nDcS3KWEGoD+UkxLaXkd32Od/mvJ4nUN/ThbAPqwIljmgkgPlYzbw==}
+    engines: {node: '>= 12.0.0', parcel: ^2.8.3}
+    peerDependencies:
+      typescript: '>=3.0.0'
+    dependencies:
+      '@parcel/plugin': 2.8.3_@parcel+core@2.8.3
+      '@parcel/source-map': 2.1.1
+      '@parcel/ts-utils': 2.8.3_typescript@4.9.5
+      typescript: 4.9.5
+    transitivePeerDependencies:
+      - '@parcel/core'
+    dev: true
+
   /@parcel/transformer-typescript-types/2.8.3_xscxxxiz63f5lkhm7jmoqp4aui:
     resolution: {integrity: sha512-zjsJsgecjw4X1nt5R7A61uWwzwCce0usKKPqnE5tQpYtF4FfK5X69r0l5JLovlyaT2uwoe+hvhu2AELA0kKRQA==}
     engines: {node: '>= 12.0.0', parcel: ^2.8.3}
@@ -829,6 +847,18 @@ packages:
     dependencies:
       nullthrows: 1.1.1
       typescript: 4.9.5
+    dev: true
+
+  /@parcel/types/2.8.3:
+    resolution: {integrity: sha512-FECA1FB7+0UpITKU0D6TgGBpGxYpVSMNEENZbSJxFSajNy3wrko+zwBKQmFOLOiPcEtnGikxNs+jkFWbPlUAtw==}
+    dependencies:
+      '@parcel/cache': 2.8.3_@parcel+core@2.8.3
+      '@parcel/diagnostic': 2.8.3
+      '@parcel/fs': 2.8.3_@parcel+core@2.8.3
+      '@parcel/package-manager': 2.8.3_@parcel+core@2.8.3
+      '@parcel/source-map': 2.1.1
+      '@parcel/workers': 2.8.3_@parcel+core@2.8.3
+      utility-types: 3.10.0
     dev: true
 
   /@parcel/types/2.8.3_@parcel+core@2.8.3:
@@ -878,7 +908,7 @@ packages:
       '@parcel/core': 2.8.3
       '@parcel/diagnostic': 2.8.3
       '@parcel/logger': 2.8.3
-      '@parcel/types': 2.8.3_@parcel+core@2.8.3
+      '@parcel/types': 2.8.3
       '@parcel/utils': 2.8.3
       chrome-trace-event: 1.0.3
       nullthrows: 1.1.1
